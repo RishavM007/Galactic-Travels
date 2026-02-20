@@ -212,16 +212,16 @@ export default function Destination() {
               </div>
             </div>
 
-            <div className="grid gap-4 md:grid-cols-3 items-start">
-              <div className="rounded-2xl border border-cyan-300/20 bg-[#0b1627]/85 p-5 min-[2200px]:p-5 min-[2800px]:p-6 shadow-[inset_0_1px_0_rgba(125,211,252,0.28)]">
+            <div className="grid gap-4 md:grid-cols-3 items-stretch">
+              <div className="h-full rounded-2xl border border-cyan-300/20 bg-[#0b1627]/85 p-5 min-[2200px]:p-5 min-[2800px]:p-6 shadow-[inset_0_1px_0_rgba(125,211,252,0.28)]">
                 <p className="font-space-mono text-[11px] min-[2200px]:text-xs min-[2800px]:text-sm tracking-[0.22em] text-cyan-300/75">PRICE</p>
                 <p className="mt-2 font-sora text-3xl min-[2200px]:text-4xl min-[2800px]:text-4xl font-semibold text-white">{planet.price}</p>
               </div>
-              <div className="rounded-2xl border border-cyan-300/20 bg-[#0b1627]/85 p-5 min-[2200px]:p-5 min-[2800px]:p-6 shadow-[inset_0_1px_0_rgba(125,211,252,0.28)]">
+              <div className="h-full rounded-2xl border border-cyan-300/20 bg-[#0b1627]/85 p-5 min-[2200px]:p-5 min-[2800px]:p-6 shadow-[inset_0_1px_0_rgba(125,211,252,0.28)]">
                 <p className="font-space-mono text-[11px] min-[2200px]:text-xs min-[2800px]:text-sm tracking-[0.22em] text-cyan-300/75">TRAVEL TIME</p>
                 <p className="mt-2 font-sora text-3xl min-[2200px]:text-4xl min-[2800px]:text-4xl font-semibold text-white">{planet.travelTime}</p>
               </div>
-              <div className="rounded-2xl border border-cyan-300/20 bg-[#0b1627]/85 p-5 min-[2200px]:p-5 min-[2800px]:p-6 shadow-[inset_0_1px_0_rgba(125,211,252,0.28)]">
+              <div className="h-full rounded-2xl border border-cyan-300/20 bg-[#0b1627]/85 p-5 min-[2200px]:p-5 min-[2800px]:p-6 shadow-[inset_0_1px_0_rgba(125,211,252,0.28)]">
                 <p className="font-space-mono text-[11px] min-[2200px]:text-xs min-[2800px]:text-sm tracking-[0.22em] text-cyan-300/75">PACKAGE</p>
                 <p className="mt-2 font-sora text-3xl min-[2200px]:text-4xl min-[2800px]:text-4xl font-semibold text-white">Elite</p>
               </div>
