@@ -19,6 +19,15 @@ body {
   font-family: var(--font-space-grotesk);
 }
 
+html.crosshair-cursor-hide,
+html.crosshair-cursor-hide body,
+html.crosshair-cursor-hide #root,
+html.crosshair-cursor-hide button,
+html.crosshair-cursor-hide a,
+html.crosshair-cursor-hide [role="button"] {
+  cursor: none !important;
+}
+
 .hud-trace {
   fill: none;
   stroke: rgba(94, 234, 212, 0.72);

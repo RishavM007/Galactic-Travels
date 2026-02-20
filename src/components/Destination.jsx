@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { planets } from "../data/planets";
 import { playClickSfx, playHoverSfx } from "../utils/sfx";
+import CrosshairCursor from "./ui/CrosshairCursor";
 
 // function useLoadedTexture(url, { srgb = false } = {}) {
 //   const [texture, setTexture] = useState(null);
@@ -145,6 +146,7 @@ export default function Destination() {
 
   return (
     <div className="min-h-screen overflow-hidden bg-[#05080f] text-slate-100">
+      <CrosshairCursor />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(34,211,238,0.16),transparent_40%),radial-gradient(circle_at_85%_85%,rgba(59,130,246,0.14),transparent_36%)]" />
 
       <div className="relative mx-auto flex min-h-screen w-[95%] max-w-[1380px] min-[2200px]:max-w-[2000px] min-[2800px]:max-w-[2500px] flex-col py-4 sm:py-6 min-[2200px]:py-8 min-[2800px]:py-10">

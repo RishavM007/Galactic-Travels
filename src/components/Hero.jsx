@@ -4,6 +4,7 @@ import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
 import { planets } from "../data/planets";
 import HudOverlay from "../components/hud/HudOverlay";
 import PlanetControls from "./hud/PlanterStatus";
+import CrosshairCursor from "./ui/CrosshairCursor";
 import { isMuted, playClickSfx, playHoverSfx, startSpaceAmbience, stopSpaceAmbience, toggleMuted } from "../utils/sfx";
 
 const SpaceCanvas = lazy(() => import("../components/canvas/SpaceCanvas"));
@@ -50,7 +51,7 @@ const Hero = () => {
       if (!preloaderVisible) startSpaceAmbience();
       return () => stopSpaceAmbience();
     }, [preloaderVisible]);
-    
+
     const handleBook = () => {
         playClickSfx();
         navigate(`/destination/${activePlanet ?? "earth"}`);
@@ -63,6 +64,7 @@ const Hero = () => {
 
 return (
   <div className="relative h-[100svh] min-h-[100svh] w-full bg-black overflow-hidden flex items-center justify-center">
+    <CrosshairCursor extraDot={Boolean(hoveredPlanet && hoveredPlanet !== activePlanet)} />
     {preloaderVisible && (
       <div className="absolute inset-0 z-[120] overflow-hidden bg-[#02050a]">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.06),transparent_54%)]" />
